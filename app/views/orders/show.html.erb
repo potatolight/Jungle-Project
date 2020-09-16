@@ -1,6 +1,5 @@
 <section class="orders-show">
 
-
   <header class="page-header">
     <h1>Order email: <%= @order.email %></h1>
   </header>
@@ -19,7 +18,7 @@
       </thead>
       <tbody>
      
-        <%= render 'item', order_list: @order_list %>
+        <%= render 'item', order_list: @order.line_items %>
       </tbody>
       <tfoot>
         <tr>
