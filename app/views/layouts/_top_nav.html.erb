@@ -12,6 +12,9 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+          <%= link_to 'About Us', :about %>
+      </li>
+        <li>
           <%= link_to 'Home', :root %>
         </li>
         <li class="dropdown">
@@ -25,7 +28,10 @@
             <% end %>
           </ul>
         </li>
+
+        
       </ul>
+      
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -39,6 +45,7 @@
           </ul>
         </li>
         <li>
+      
           <%= link_to cart_path do %>
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
