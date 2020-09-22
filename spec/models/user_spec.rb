@@ -21,6 +21,7 @@ RSpec.describe User, type: :model do
                         password_confirmation: "1245")
       
       expect(user1).not_to be_valid
+
     end
 
     it "is not valid without an email" do

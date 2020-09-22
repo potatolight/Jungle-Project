@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :password, length: { minimum: 3 }
+
+  # validates :email, presence: true, uniqueness: { case_sensitive: false }
   def self.authenticate_with_credentials(email, password)
     user = where('LOWER(email) = ?', email.downcase.delete(' '))[0]
     user && user.authenticate(password)
