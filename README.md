@@ -2,6 +2,10 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Final Product
+
+!["Home Page"](https://github.com/potatolight/Jungle-Project/blob/master/docs/Homepage.png)
+!["Product Details"](https://github.com/potatolight/Jungle-Project/blob/master/docs/Product%20Details.png)
 
 ## Setup
 
